@@ -1,0 +1,68 @@
+<div class="background"> 
+ <div class="row" >
+
+    <div class=" col-6" >
+        
+        <img src="/assets/Group 235.png" alt="" id="one">
+    </div>
+
+
+    <div class="col-6">
+        <label id="two"></label>
+
+        <h1> Welcome </h1>
+
+ <form [formGroup]="loginForm" (ngSubmit)="login()">
+   <!-- ..........................email....................................   -->
+
+        <div class="form-group" >
+              <input type="email" id="email" class="form-control"  formControlName="Contact_Email" 
+              name="Contact_Email" placeholder="Email Adress "><br> 
+
+              <label for="" *ngIf="loginForm.get('Contact_Email')?.touched && loginForm.get('Contact_Email')?.errors?.required"
+               style="color: red;" id="Einvalid" class="form-text"> email is required</label> 
+        </div>
+<!-- ..........................password..................................   -->
+
+        <div class="form-group" >
+            <input type="password"  id="password" class="form-control"
+            formControlName="password"  name="password" placeholder="Password" ><br> 
+         
+            <label for="" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.errors?.required"
+            style="color: red;" id="Pinvalid" class="form-text"> password is required</label> 
+
+        </div>
+ <!-- ..........................remember me ....................................   -->
+
+         <div class="form-group form-check">
+    
+            <input type="checkbox" class="form-check-input" >
+            <label for="" id="remember">Remember Me</label>
+
+         </div>
+
+ <!-- ..........................forgot password ....................................   -->
+        <div class="form group">
+
+            <a class="linkclass" href="https://accounts.google.com/signin/v2/recoveryidentifier?flowName=
+            GlifWebSignIn&flowEntry=ServiceLogin">Forgot password?</a>  
+
+        </div><br>
+
+ <!-- .........................button ....................................   -->
+        
+        <div class="form group">
+
+          <button class="btn btn-lg btn-block" type="submit" value="submit">Login</button>
+
+        </div>
+
+    </form>
+
+  
+     
+    </div>
+
+  </div>
+
+  </div>

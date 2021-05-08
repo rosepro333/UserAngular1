@@ -1,0 +1,139 @@
+.background{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFFFFF;
+}
+
+#one{
+   position: absolute;
+   width: 924px;
+   height: 1024px;
+   left: 0px;
+   top: 0px;
+   background: #F7FFFB;
+}
+
+#two{
+
+    position: absolute;
+    width: 54px;
+    height: 6px;
+    left: 969px;
+    top: 255px;
+    
+    background: #21B371;
+}
+h1{
+      position: absolute;
+      width: 145px;
+      height: 38px;
+      left: 971px;
+      top: 271px;
+
+font-family: 'Roboto', sans-serif;
+font-style: normal; 
+font-weight: 500;
+font-size: 32px;
+line-height: 37px;
+
+letter-spacing: 0.06em;
+
+color: #444445;
+
+}
+
+#email{
+    position: absolute;
+width: 380px;
+height: 50px;
+left: 969px;
+top: 372px;
+
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+}
+#password{
+
+position: absolute;
+width: 380px;
+height: 50px;
+left: 969px;
+top: 456px;
+
+
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+}
+.form-check-input{
+    
+position: absolute;
+width: 13px;
+height: 13px;
+left: 971px;
+top: 557px;
+
+background: #FFFFFF;
+border: 1px solid #ABABAB;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+#remember{
+    position: absolute;
+width: 100px;
+height: 16px;
+left: 1000px;
+top: 560px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.06em;
+
+color: #1A1A1A;
+
+}
+a{
+    position: absolute;
+width: 128px;
+height: 16px;
+left: 1221px;
+top: 560px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.06em;
+
+color: #1A1A1A;
+
+}
+button{
+    position: absolute;
+width: 221px;
+height: 58px;
+left: 1128px;
+top: 620px;
+
+background: #21B371;
+border: 1px solid #D5D5D5;
+box-sizing: border-box;
+border-radius: 14px;
+
+color:#FFFFFF;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+}
