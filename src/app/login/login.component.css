@@ -1,16 +1,19 @@
-.background{
+
+/* -----------------BASIC WIDTH------------------- */
+
+  .background{
     position: relative;
-    width: 1440px;
-    height: 1024px;
-    background: #FFFFFF;
+    width: 1360px;
+    height: 600px;
+    background: #ffffff;
 }
 
 #one{
    position: absolute;
-   width: 924px;
-   height: 1024px;
+   width: 800px;
+   height: 600px;
    left: 0px;
-   top: 0px;
+   top: 4px;
    background: #F7FFFB;
 }
 
@@ -19,17 +22,17 @@
     position: absolute;
     width: 54px;
     height: 6px;
-    left: 969px;
-    top: 255px;
+    left: 850px;
+    top: 120px;
     
     background: #21B371;
 }
 h1{
       position: absolute;
-      width: 145px;
-      height: 38px;
-      left: 971px;
-      top: 271px;
+      width: 140px;
+      height: 30px;
+      left:850px;
+      top: 140px;
 
 font-family: 'Roboto', sans-serif;
 font-style: normal; 
@@ -47,8 +50,8 @@ color: #444445;
     position: absolute;
 width: 380px;
 height: 50px;
-left: 969px;
-top: 372px;
+left: 850px;
+top: 240px;
 
 border: 1px solid #FFFFFF;
 box-sizing: border-box;
@@ -61,8 +64,8 @@ border-radius: 10px;
 position: absolute;
 width: 380px;
 height: 50px;
-left: 969px;
-top: 456px;
+left: 850px;
+top: 320px;
 
 
 border: 1px solid #FFFFFF;
@@ -76,8 +79,8 @@ border-radius: 10px;
 position: absolute;
 width: 13px;
 height: 13px;
-left: 971px;
-top: 557px;
+left: 850px;
+top: 400px;
 
 background: #FFFFFF;
 border: 1px solid #ABABAB;
@@ -89,8 +92,8 @@ border-radius: 4px;
     position: absolute;
 width: 100px;
 height: 16px;
-left: 1000px;
-top: 560px;
+left: 870px;
+top: 402px;
 
 font-family: Roboto;
 font-style: normal;
@@ -106,8 +109,8 @@ a{
     position: absolute;
 width: 128px;
 height: 16px;
-left: 1221px;
-top: 560px;
+left: 1110px;
+top: 400px;
 
 font-family: Roboto;
 font-style: normal;
@@ -121,10 +124,10 @@ color: #1A1A1A;
 }
 button{
     position: absolute;
-width: 221px;
-height: 58px;
-left: 1128px;
-top: 620px;
+width: 215px;
+height: 55px;
+left: 1020px;
+top: 440px;
 
 background: #21B371;
 border: 1px solid #D5D5D5;
@@ -136,4 +139,448 @@ font-style: normal;
 font-weight: 500;
 font-size: 24px;
 line-height: 28px;
-}
+}   
+
+
+/* -------------BREAKPOINT---------------WIDTH 1440----------1440*900------------- */
+
+@media screen and (min-width: 1440px){
+
+
+    .background{
+        position: relative;
+        width: 1440px;
+        height: 900px;
+        background: #ffffff;
+    }
+    
+    #one{
+       position: absolute;
+       width: 800px;
+       height: 900px;
+       left: 0px;
+       top: 4px;
+       background: #F7FFFB;
+    }
+    
+    #two{
+    
+        position: absolute;
+        width: 54px;
+        height: 6px;
+        left: 900px;
+        top: 160px;
+        
+        background: #21B371;
+    }
+    h1{
+          position: absolute;
+          width: 140px;
+          height: 30px;
+          left:900px;
+          top: 180px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal; 
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 37px;
+    
+    letter-spacing: 0.06em;
+    
+    color: #444445;
+    
+    }
+    
+    #email{
+        position: absolute;
+    width: 390px;
+    height: 50px;
+    left: 900px;
+    top: 290px;
+    
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    }
+    #password{
+    
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    left: 900px;
+    top: 380px;
+    
+    
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    }
+    .form-check-input{
+        
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 900px;
+    top: 460px;
+    
+    background: #FFFFFF;
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+    
+    #remember{
+        position: absolute;
+    width: 100px;
+    height: 16px;
+    left: 920px;
+    top: 462px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #1A1A1A;
+    
+    }
+    a{
+        position: absolute;
+    width: 128px;
+    height: 16px;
+    left: 1180px;
+    top: 460px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #1A1A1A;
+    
+    }
+    button{
+        position: absolute;
+    width: 215px;
+    height: 55px;
+    left: 1070px;
+    top: 510px;
+    
+    background: #21B371;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    border-radius: 14px;
+    
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    }
+
+ }   
+
+ /* -------------BREAKPOINT---------------WIDTH 1680*1050---------------------- */
+ 
+ @media screen and (min-width: 1680px){ 
+
+
+
+    .background{
+        position: relative;
+        width: 1680px;
+        height: 1050px;
+        background: #ffffff;
+    }
+    
+    #one{
+       position: absolute;
+       width: 1000px;
+       height: 1050px;
+       left: 0px;
+       top: 4px;
+       background: #F7FFFB;
+    }
+    
+    #two{
+    
+        position: absolute;
+        width: 68px;
+        height: 6px;
+        left: 1100px;
+        top: 220px;
+        
+        background: #21B371;
+    }
+    h1{
+          position: absolute;
+          width: 140px;
+          height: 30px;
+          left:1100px;
+          top: 240px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal; 
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 37px;
+    
+    letter-spacing: 0.06em;
+    
+    color: #444445;
+    
+    }
+    
+    #email{
+        position: absolute;
+    width: 380px;
+    height: 50px;
+    left: 1100px;
+    top: 350px;
+    
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    }
+    #password{
+    
+    position: absolute;
+    width: 380px;
+    height: 50px;
+    left: 1100px;
+    top: 440px;
+    
+    
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    }
+    .form-check-input{
+        
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 1100px;
+    top: 540px;
+    
+    background: #FFFFFF;
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+    
+    #remember{
+        position: absolute;
+    width: 100px;
+    height: 16px;
+    left: 1120px;
+    top: 542px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #1A1A1A;
+    
+    }
+    a{
+        position: absolute;
+    width: 128px;
+    height: 16px;
+    left: 1370px;
+    top: 540px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #1A1A1A;
+    
+    }
+    button{
+        position: absolute;
+    width: 215px;
+    height: 55px;
+    left: 1260px;
+    top: 590px;
+    
+    background: #21B371;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    border-radius: 14px;
+    
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    }
+
+   }   
+ 
+
+/* -------------BREAKPOINT---------------WIDTH 1920*1080---------------------- */
+
+  @media screen and (min-width: 1920px){  
+
+
+    .background{
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        background: #ffffff;
+    }
+    
+    #one{
+       position: absolute;
+       width: 1220px;
+       height: 1080px;
+       left: 0px;
+       top: 4px;
+       background: #F7FFFB;
+    }
+    
+    #two{
+    
+        position: absolute;
+        width: 65px;
+        height: 6px;
+        left: 1350px;
+        top: 230px;
+        
+        background: #21B371;
+    }
+    h1{
+          position: absolute;
+          width: 140px;
+          height: 30px;
+          left:1350px;
+          top: 260px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal; 
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 37px;
+    
+    letter-spacing: 0.06em;
+    
+    color: #444445;
+    
+    }
+    
+    #email{
+        position: absolute;
+    width: 400px;
+    height: 55px;
+    left: 1350px;
+    top: 380px;
+    
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    }
+    #password{
+    
+    position: absolute;
+    width: 400px;
+    height: 55px;
+    left: 1350px;
+    top: 480px;
+    
+    
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    }
+    .form-check-input{
+        
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 1350px;
+    top: 580px;
+    
+    background: #FFFFFF;
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+    
+    #remember{
+        position: absolute;
+    width: 100px;
+    height: 16px;
+    left: 1370px;
+    top: 582px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #1A1A1A;
+    
+    }
+    a{
+        position: absolute;
+    width: 128px;
+    height: 16px;
+    left: 1620px;
+    top: 580px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #1A1A1A;
+    
+    }
+    button{
+        position: absolute;
+    width: 215px;
+    height: 55px;
+    left: 1530px;
+    top: 630px;
+    
+    background: #21B371;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    border-radius: 14px;
+    
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    }
+
+   }  
