@@ -21,8 +21,8 @@ const ELEMENT_DATA: UserDetails[] = [
    {documentid:"f8ea556d-acf9-4c70-a38a-b3a577  ",createdon:new Date(2021, 6, 12),name:"mary",status:""},
    {documentid:"f8ea556d-acf9-4c70-a38a-b3a577  ",createdon:new Date(2001, 7, 6),name:"antony",status:""},
    {documentid:"f8ea556d-acf9-4c70-a38a-b3a577  ",createdon:new Date(2020, 5, 9),name:"mini",status:""},
-   {documentid:"f8ea556d-acf9-4c70-a38a-b3a577  ",createdon:new Date(2008, 7, 14),name:"lidiya",status:""},
-   {documentid:"f8ea556d-acf9-4c70-a38a-b3a577  ",createdon:new Date(2020, 4, 29),name:"isaq",status:""},
+  //  {documentid:"f8ea556d-acf9-4c70-a38a-b3a577  ",createdon:new Date(2008, 7, 14),name:"lidiya",status:""},
+  //  {documentid:"f8ea556d-acf9-4c70-a38a-b3a577  ",createdon:new Date(2020, 4, 29),name:"isaq",status:""},
   
 
  ];

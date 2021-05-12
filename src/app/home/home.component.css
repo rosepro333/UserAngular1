@@ -1,26 +1,26 @@
- .background{
+.background{
    
-    width: 1440px;
-    height: 900px; 
-   
+    width: 1320px;
+    height: 650px; 
     background: #F8F8F8;
     display:flex ;
 }
 
 
 .col-4{
-    
-    width: 94px;
-    height: 950px;
+    position: relative;
+    width: 44px; 
+    height: 750px;
     left: 0px;
     top: 0px;
+    padding-left: 94px;
     background: #333333;
     
 
 }
 .one{
-     position: relative;
-    margin-left: 17%;
+    position: absolute;
+    left: 28px;
     margin-top: 30px; 
 }
 .two{
@@ -33,11 +33,13 @@ top: 141px;
 }
 .three{
     position: absolute;
-    width: 105px;
+    width: 44px;
     height: 58px;
     left: 0px;
     top: 216px;
-    background: #FFFFFF;
+    padding-left: 50px;
+
+    background: #ffffff;
 }
 #three-1{
 
@@ -70,13 +72,13 @@ mix-blend-mode: normal;
     width: 34px;
     height: 34px;
     left: 28px;
-    top: 702px;
+    top: 562px;
 
 }
 .leftside1{
  position: absolute;
 left:8px;
-top: 123%;
+top: 80%;
 bottom: 15.67%;
 
 font-style: normal;
@@ -91,16 +93,16 @@ color: #8F8F8F;
 }
 .seven{
         position: absolute;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         left: 19px;
-        top: 807px;
+        top: 670px;
 
 }
 .leftside2{
 position: absolute;
 left: 22px;
-top: 140%;
+top: 95%;
 bottom: 4.22%;
 
 font-style: normal;
@@ -116,7 +118,8 @@ color: #8F8F8F;
 
 .navbar{
 
-width: 1346px;
+ width: 1246px; 
+
 height: 85px;
 background: #F8F8F8;
 box-shadow: 2px 4px 11px 1px rgba(0, 0, 0, 0.11);
@@ -138,8 +141,8 @@ box-shadow: 2px 4px 11px 1px rgba(0, 0, 0, 0.11);
     border-right: none;
     padding: 5px;
 
-    width: 222px;
-    height: 25px;
+    width: 200px;
+    height: 20px;
 
     border-radius: 3px 0 0 3px;
     outline: none;
@@ -152,7 +155,7 @@ box-shadow: 2px 4px 11px 1px rgba(0, 0, 0, 0.11);
   
   .searchButton {
     width: 36px;
-    height: 37px;
+    height: 32px;
     border: 1px solid  #21B371;
     background:  #21B371;
     text-align: center;
@@ -164,7 +167,7 @@ box-shadow: 2px 4px 11px 1px rgba(0, 0, 0, 0.11);
 .icons{
    
     display: flex;
-    margin-left: 5%;
+    margin-left: 2%;
    
  
 }
@@ -178,8 +181,8 @@ box-shadow: 2px 4px 11px 1px rgba(0, 0, 0, 0.11);
 
 select{
 
-    width: 222px;
-    height: 37px;
+    width: 200px;
+    height: 32px;
 
 
     border: 1px solid #d2d4d4;
@@ -195,7 +198,7 @@ select{
 
     position: relative;
   
-    margin-left: 26%;
+    margin-left: 30%;
     margin-top: 12px;
    
    
@@ -203,29 +206,29 @@ select{
 
 .bt1{
 
-    width: 210px;
-    height: 50px;
+    width: 179px;
+    height: 32px;
    
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 5px ;
     outline: none;
-    color: #383434; 
+    color: #2c2929; 
 
 } 
 mat-date-range-input{
     
     height:1px;
-    font-size: 13px;
+    font-size: 11px;
  
 
 }
 mat-label{
-    font-size: 14px;
+    font-size: 12px;
     
 }
 .bt2{
     width: 100px;
-    height: 35px;
+    height: 32px;
 
     background-color: #F8F8F8;
     border: 1px solid #b45406;
@@ -240,7 +243,7 @@ mat-label{
 #bt2{
 
      width: 100px;
-    height: 35px;
+    height: 32px;
 
     background-color: #e0f3c8;
     border: 1px solid #24af08;
@@ -256,22 +259,20 @@ mat-label{
 table {
     width: 100%;
     background: white;
-    height: 750px;
-   
    
   }
 
 .mat-elevation-z8 {
-      padding-left: 2%;
-      margin-top: 8%;
+   
+     margin-top: 3%;
   }
 
   th{
-      height: 90px;
+      height: 100px;
       width:28%;
   }
   td{
-    height: 90px;
+    height: 100px;
     width:28%;
     padding-right:2%;
   }
@@ -279,4 +280,882 @@ table {
       color:rgb(194, 194, 9);
       background-color: hsl(60, 100%, 98%);
       border-color: rgb(214, 214, 18);
+  } 
+
+
+  /* ------------------------------------------------break point 1440*900------------------------- */
+@media screen and (min-width: 1440px){  
+
+    .background{
+     
+        width: 1440px;
+        height: 900px; 
+        background: #ffffff;
+        display:flex ;
+    }
+    
+    
+    .col-4{
+        position: relative;
+        width: 44px; 
+        height: 900px;
+        left: 0px;
+        top: 0px;
+        padding-left: 80px;
+        background: #333333;
+        
+    
+    }
+    .one{
+        position: absolute;
+        left: 38px;
+        margin-top: 30px; 
+    }
+    .two{
+        
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 38px;
+    top: 141px;
+    }
+    .three{
+        position: absolute;
+        width: 44px;
+        height:62px;
+        left: 0px;
+        top: 216px;
+        padding-left: 76px;
+    
+        background: #ffffff;
+    }
+    #three-1{
+    
+     position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 38px;
+    top: 12px;
+        
+    }
+    .four{
+        
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 38px;
+    top: 307px;
+    
+    }
+    .five{
+        position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 38px;
+    top: 389px;
+    mix-blend-mode: normal;
+    }
+    .six{
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        left: 38px;
+        top: 672px;
+    
+    }
+    .leftside1{
+     position: absolute;
+    left:18px;
+    top: 80%;
+    bottom: 15.67%;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: #8F8F8F;
+    
+    }
+    .seven{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            left: 30px;
+            top: 810px;
+    
+    }
+    .leftside2{
+    position: absolute;
+    left: 30px;
+    top: 95%;
+    bottom: 4.22%;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: #8F8F8F;
+    }
+    
+    
+    .navbar{
+    
+     width: 1320px; 
+    
+    height: 85px;
+    background: #F8F8F8;
+    box-shadow: 2px 4px 11px 1px rgba(0, 0, 0, 0.11);
+    
+    }
+    
+    .search {
+       
+        position: relative;
+        display: flex;
+        padding-top: 20px;
+        border-left: none;
+        margin-top: 12px;
+      }
+    
+    .searchTerm {
+        
+        border: 1px solid #d2d4d4;
+        border-right: none;
+        padding: 5px;
+    
+        width: 200px;
+        height: 20px;
+    
+        border-radius: 3px 0 0 3px;
+        outline: none;
+        color: #c8cecc;
+      }
+      
+      .searchTerm:focus{
+        color:  #21B371;
+      }
+      
+      .searchButton {
+        width: 36px;
+        height: 32px;
+        border: 1px solid  #21B371;
+        background:  #21B371;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 15px;
+      }
+    .icons{
+       
+        display: flex;
+        margin-left: 2%;
+       
+     
+    }
+    
+    .selection{
+        
+        position: relative;
+        padding-top: 20px;
+        margin-top: 12px;
+    }
+    
+    select{
+    
+        width: 200px;
+        height: 32px;
+    
+    
+        border: 1px solid #d2d4d4;
+        border-right: none;
+        padding: 5px;
+    
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #7c8581;
+    }
+    
+    .buttons{
+    
+        position: relative;
+      
+        margin-left: 33%;
+        margin-top: 12px;
+       
+       
+    }
+    
+    .bt1{
+    
+        width: 179px;
+        height: 32px;
+       
+        background-color: white;
+        border-radius: 5px ;
+        outline: none;
+        color: #2c2929; 
+    
+    } 
+    mat-date-range-input{
+        
+        height:1px;
+        font-size: 11px;
+     
+    
+    }
+    mat-label{
+        font-size: 12px;
+        
+    }
+    .bt2{
+        width: 100px;
+        height: 32px;
+    
+        background-color: #F8F8F8;
+        border: 1px solid #b45406;
+    
+        margin-left: 6px;
+    
+        border-radius: 5px ;
+        outline: none;
+        color: #db9c14;
+    
+    }
+    #bt2{
+    
+         width: 100px;
+        height: 32px;
+    
+        background-color: #e0f3c8;
+        border: 1px solid #24af08;
+    
+        margin-left: 6px;
+    
+        border-radius: 5px ;
+        outline: none;
+        color: #38b407;
+    }
+    
+    
+    table {
+        width: 100%;
+        background: white;
+        
+      }
+    
+    .mat-elevation-z8 {
+       
+         margin-top: 3%;
+      }
+    
+      th{
+          height: 120px;
+          width:28%;
+      }
+      td{
+        height: 120px;
+        width:28%;
+        padding-right:2%;
+      }
+      #bt3{
+          color:rgb(194, 194, 9);
+          background-color: hsl(60, 100%, 98%);
+          border-color: rgb(214, 214, 18);
+      } 
+    
+
+    
+ }  
+
+
+ /* ---------------------------------break point 1680*1050-------------------------------------------- */
+
+@media screen and (min-width: 1680px){ 
+
+    .background{
+     
+        width: 1680px;
+        height: 1050px; 
+        background: #ffffff;
+        display:flex ;
+    }
+    
+    
+    .col-4{
+        position: relative;
+        width: 44px; 
+        height: 1050px;
+        left: 0px;
+        top: 0px;
+        padding-left: 90px;
+        background: #333333;
+        
+    
+    }
+    .one{
+        position: absolute;
+        left: 44px;
+        margin-top: 30px; 
+    }
+    .two{
+        
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 44px;
+    top: 141px;
+    }
+    .three{
+        position: absolute;
+        width: 44px;
+        height:62px;
+        left: 0px;
+        top: 216px;
+        padding-left: 90px;
+    
+        background: #ffffff;
+    }
+    #three-1{
+    
+     position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 44px;
+    top: 12px;
+        
+    }
+    .four{
+        
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left:44px;
+    top: 307px;
+    
+    }
+    .five{
+        position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 44px;
+    top: 389px;
+    mix-blend-mode: normal;
+    }
+    .six{
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        left: 44px;
+        top: 792px;
+    
+    }
+    .leftside1{
+     position: absolute;
+    left:23px;
+    top: 80%;
+    bottom: 15.67%;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: #8F8F8F;
+    
+    }
+    .seven{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            left: 37px;
+            top: 950px;
+    
+    }
+    .leftside2{
+    position: absolute;
+    left: 35px;
+    top: 95%;
+    bottom: 4.22%;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: #8F8F8F;
+    }
+    
+    
+    .navbar{
+    
+     width: 1548px; 
+    
+    height: 85px;
+    background: #F8F8F8;
+    box-shadow: 2px 4px 11px 1px rgba(0, 0, 0, 0.11);
+    
+    }
+    
+    .search {
+       
+        position: relative;
+        display: flex;
+        padding-top: 20px;
+        border-left: none;
+        margin-top: 12px;
+      }
+    
+    .searchTerm {
+        
+        border: 1px solid #d2d4d4;
+        border-right: none;
+        padding: 5px;
+    
+        width: 200px;
+        height: 20px;
+    
+        border-radius: 3px 0 0 3px;
+        outline: none;
+        color: #c8cecc;
+      }
+      
+      .searchTerm:focus{
+        color:  #21B371;
+      }
+      
+      .searchButton {
+        width: 36px;
+        height: 32px;
+        border: 1px solid  #21B371;
+        background:  #21B371;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 15px;
+      }
+    .icons{
+       
+        display: flex;
+        margin-left: 2%;
+       
+     
+    }
+    
+    .selection{
+        
+        position: relative;
+        padding-top: 20px;
+        margin-top: 12px;
+    }
+    
+    select{
+    
+        width: 200px;
+        height: 32px;
+    
+    
+        border: 1px solid #d2d4d4;
+        border-right: none;
+        padding: 5px;
+    
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #7c8581;
+    }
+    
+    .buttons{
+    
+        position: relative;
+      
+        margin-left: 41%;
+        margin-top: 12px;
+       
+       
+    }
+    
+    .bt1{
+    
+        width: 179px;
+        height: 32px;
+       
+        background-color: white;
+        border-radius: 5px ;
+        outline: none;
+        color: #2c2929; 
+    
+    } 
+    mat-date-range-input{
+        
+        height:1px;
+        font-size: 11px;
+     
+    
+    }
+    mat-label{
+        font-size: 12px;
+        
+    }
+    .bt2{
+        width: 100px;
+        height: 32px;
+    
+        background-color: #F8F8F8;
+        border: 1px solid #b45406;
+    
+        margin-left: 6px;
+    
+        border-radius: 5px ;
+        outline: none;
+        color: #db9c14;
+    
+    }
+    #bt2{
+    
+         width: 100px;
+        height: 32px;
+    
+        background-color: #e0f3c8;
+        border: 1px solid #24af08;
+    
+        margin-left: 6px;
+    
+        border-radius: 5px ;
+        outline: none;
+        color: #38b407;
+    }
+    
+    
+    table {
+        width: 100%;
+        background: white;
+        
+      }
+    
+    .mat-elevation-z8 {
+       
+         margin-top: 5%;
+      }
+    
+      th{
+          height: 130px;
+          width:28%;
+      }
+      td{
+        height: 130px;
+        width:28%;
+        padding-right:2%;
+      }
+      #bt3{
+          color:rgb(194, 194, 9);
+          background-color: hsl(60, 100%, 98%);
+          border-color: rgb(214, 214, 18);
+      } 
+    
+
+    
+ } 
+
+
+ /* ---------------------------------break point 1920*1080-------------------------------------------- */
+
+@media screen and (min-width: 1920px){ 
+
+    .background{
+     
+        width: 1920px;
+        height: 1080px; 
+        background: #ffffff;
+        display:flex ;
+    }
+    
+    
+    .col-4{
+        position: relative;
+        width: 44px; 
+        height: 1080px;
+        left: 0px;
+        top: 0px;
+        padding-left: 90px;
+        background: #333333;
+        
+    
+    }
+    .one{
+        position: absolute;
+        left: 44px;
+        margin-top: 30px; 
+    }
+    .two{
+        
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 44px;
+    top: 141px;
+    }
+    .three{
+        position: absolute;
+        width: 44px;
+        height:80px;
+        left: 0px;
+        top: 216px;
+        padding-left: 90px;
+    
+        background: #ffffff;
+    }
+    #three-1{
+    
+     position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 44px;
+    top: 19px;
+        
+    }
+    .four{
+        
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left:44px;
+    top: 320px;
+    
+    }
+    .five{
+        position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 44px;
+    top: 400px;
+    mix-blend-mode: normal;
+    }
+    .six{
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        left: 44px;
+        top: 850px;
+    
+    }
+    .leftside1{
+     position: absolute;
+    left:23px;
+    top: 83%;
+    bottom: 15.67%;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: #8F8F8F;
+    
+    }
+    .seven{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            left: 37px;
+            top: 980px;
+    
+    }
+    .leftside2{
+    position: absolute;
+    left: 35px;
+    top: 95%;
+    bottom: 4.22%;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: #8F8F8F;
+    }
+    
+    
+    .navbar{
+    
+     width: 1790px; 
+    
+    height: 100px;
+    background: #F8F8F8;
+    box-shadow: 2px 4px 11px 1px rgba(0, 0, 0, 0.11);
+    
+    }
+    
+    .search {
+       
+        position: relative;
+        display: flex;
+        padding-top: 20px;
+        border-left: none;
+        margin-top: 12px;
+      }
+    
+    .searchTerm {
+        
+        border: 1px solid #d2d4d4;
+        border-right: none;
+        padding: 5px;
+    
+        width: 200px;
+        height: 20px;
+    
+        border-radius: 3px 0 0 3px;
+        outline: none;
+        color: #c8cecc;
+      }
+      
+      .searchTerm:focus{
+        color:  #21B371;
+      }
+      
+      .searchButton {
+        width: 36px;
+        height: 32px;
+        border: 1px solid  #21B371;
+        background:  #21B371;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 15px;
+      }
+    .icons{
+       
+        display: flex;
+        margin-left: 2%;
+       
+     
+    }
+    
+    .selection{
+        
+        position: relative;
+        padding-top: 20px;
+        margin-top: 12px;
+    }
+    
+    select{
+    
+        width: 200px;
+        height: 32px;
+    
+    
+        border: 1px solid #d2d4d4;
+        border-right: none;
+        padding: 5px;
+    
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #7c8581;
+    }
+    
+    .buttons{
+    
+        position: relative;
+      
+        margin-left: 51%;
+        margin-top: 12px;
+       
+       
+    }
+    
+    .bt1{
+    
+        width: 179px;
+        height: 32px;
+       
+        background-color: white;
+        border-radius: 5px ;
+        outline: none;
+        color: #2c2929; 
+    
+    } 
+    mat-date-range-input{
+        
+        height:1px;
+        font-size: 11px;
+     
+    
+    }
+    mat-label{
+        font-size: 12px;
+        
+    }
+    .bt2{
+        width: 100px;
+        height: 32px;
+    
+        background-color: #F8F8F8;
+        border: 1px solid #b45406;
+    
+        margin-left: 6px;
+    
+        border-radius: 5px ;
+        outline: none;
+        color: #db9c14;
+    
+    }
+    #bt2{
+    
+         width: 100px;
+        height: 32px;
+    
+        background-color: #e0f3c8;
+        border: 1px solid #24af08;
+    
+        margin-left: 6px;
+    
+        border-radius: 5px ;
+        outline: none;
+        color: #38b407;
+    }
+    
+    
+    table {
+        width: 100%;
+        background: white;
+        
+      }
+    
+    .mat-elevation-z8 {
+       
+         margin-top: 6%;
+      }
+    
+      th{
+          height: 130px;
+          width:28%;
+      }
+      td{
+        height: 130px;
+        width:28%;
+        padding-right:2%;
+      }
+      #bt3{
+          color:rgb(194, 194, 9);
+          background-color: hsl(60, 100%, 98%);
+          border-color: rgb(214, 214, 18);
+      } 
+    
+
+    
   } 
