@@ -39,21 +39,22 @@ export class LoginComponent implements OnInit {
                 const Contact_Email=this.loginForm.value.Contact_Email;
                 const password=this.loginForm.value.password;
                     
-                    alert(Contact_Email);
-                    alert(password);
+                 //  alert(Contact_Email);
+                  // alert(password);
       
-               const user = this.userService.authenticateUser(Contact_Email,password)
-                                   .subscribe((data:any)=>{
+              //  const user = this.userService.authenticateUser(Contact_Email,password)
+              //                      .subscribe((data:any)=>{
 
-                                      console.log(data);
-                                      alert(data.msg);
+              //                         console.log(data);
+              //                         //alert(data.msg);
 
-                                    localStorage.setItem("token",data.data);
-                                    this.router.navigateByUrl("/home");
+              //                       localStorage.setItem("token",data.data);
+
+                                   this.router.navigateByUrl("/home");
                       
-                                    },(err)=>{
-                                      alert(err.error.message);
-                                  })
+              //                       },(err)=>{
+              //                         alert(err.error.message);
+              //                     })
                         
       
           }

@@ -1,0 +1,23 @@
+ .bt1{
+
+    width: 210px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+  
+    border: 1px solid #d2d4d4;
+
+    background-color: #F8F8F8;
+
+    border-radius: 5px ;
+    outline: none;
+    color: #414443; 
+} 
+mat-date-range-input{
+    
+    height:8px;
+    font-size: 14px;
+
+}
+
+

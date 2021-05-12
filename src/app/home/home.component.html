@@ -49,13 +49,38 @@
                                     </button>
                             </div>
                             
-                            <div class="buttons">
+     <div class="buttons"> 
 
-                                <button class="bt1"><i class="fa fa-calendar" style="font-size:20px"></i> 12-10-2020 <i class="fa fa-arrows-h"></i>30-10-2020</button>
-                                <button class="bt2"><i class="fa fa-list"></i>  More </button>
-                                <button class="bt2">Clear All</button>
+          <!-- <button class="bt1"><i class="fa fa-calendar" style="font-size:20px"></i> 12-10-2020 <i class="fa fa-arrows-h"></i>30-10-2020</button> -->
+                               
+                                
+<!-- --------------------------DATE RANGE--------------------------------------------------- -->
+           <mat-form-field appearance="fill" style="flex: 1; " class="bt1">
+               
+            
+               <mat-date-range-input [rangePicker]="picker" [formGroup]="filterForm">
+               <input matStartDate   formControlName="fromDate" placeholder="Start Date" >
+               <input matEndDate   formControlName="toDate" placeholder="End Date">
+                </mat-date-range-input>
+
+                <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+
+               <mat-date-range-picker #picker></mat-date-range-picker>
+               <mat-label>Enter a date range</mat-label>
+
+            
+
+          </mat-form-field> 
+
+
+<!-- ---------------------------------------ANOTHER BUTTONS------------------------------------------------- -->
+                                
+                            <button mat-stroked-button id="bt2" (click)="getDateRange()" type="submit">Submit</button>
+                            <!-- <i class="fa fa-list"></i>  -->
+
+                            <button class="bt2">Clear All</button>
                             
-                            </div>
+     </div>
 
               
                     </div> 
@@ -65,21 +90,23 @@
 
             <div class="table-one">
 
-                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                <table  mat-table [dataSource]="dataSource" class="mat-elevation-z8"> 
 
 
                     <!-- Position Column -->
                     <ng-container matColumnDef="documentid" >
                       <th mat-header-cell *matHeaderCellDef> Document ID </th>
                       <td mat-cell *matCellDef="let element"> {{element.documentid}} </td>
-                    </ng-container>
+                    </ng-container> 
 
                   
                     <!-- Name Column -->
-                    <ng-container matColumnDef="createdon" >
+                     <ng-container matColumnDef="createdon" >
                       <th mat-header-cell *matHeaderCellDef>Created On</th>
-                      <td mat-cell *matCellDef="let element"> {{element.createdon}} </td>
-                    </ng-container>
+                      <td mat-cell *matCellDef="let element"> {{element.createdon | date: 'dd/MM/yyyy'}} </td>
+                    </ng-container> 
+
+                   
                   
                     <!-- Weight Column -->
                     <ng-container matColumnDef="name">
@@ -87,7 +114,7 @@
                       <td mat-cell *matCellDef="let element"> {{element.name}} </td>
                     </ng-container>
 
-
+ 
                       <ng-container matColumnDef="status">
                         <th mat-header-cell  *matHeaderCellDef > Status </th>
                         <td mat-cell *matCellDef="let element" >
@@ -99,7 +126,6 @@
 
                       
                   
-                
                   
                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
@@ -110,7 +136,6 @@
             </div>
 
 
-        </section>
-
+        </section> 
 
     </div>

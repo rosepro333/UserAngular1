@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
-const apiUrl1="https://verify.flexm.com/api/token/authenticate";//login
+const apiUrl1="https://verify.flexm.com/api/token/authenticate";
 
 const apiUrl2="https://verify.flexm.com/api/scans/scanDocByTenent";
 
@@ -17,17 +17,22 @@ export class UserService {
 
   constructor (private http:HttpClient){ }
 
-        authenticateUser=(email:string,pwd:string)=>{
-          //httprequest
-                  return this.http.post(apiUrl1,{
-                        "Contact_Email":email,
-                        "password":pwd
-          
+        // authenticateUser=(Contact_Email:string,password:string)=>{
+                     
+        //   //httprequest
+
+        //           return this.http.post(apiUrl1,{
+                   
+        //               "Contact_Email":Contact_Email,
+        //               "password":password
+                 
                         
-                  });
+        //           });
 
 
-          }
+        //   }
+
+
 // ................................header.............................
           generateHeader=()=>{
             let token=localStorage.getItem("token");
