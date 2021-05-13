@@ -19,8 +19,14 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 import { TestComponent } from './test/test.component';
+import { DetailsComponent } from './details/details.component';
+
 
 
 
@@ -30,7 +36,8 @@ import { TestComponent } from './test/test.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    TestComponent
+    TestComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +52,9 @@ import { TestComponent } from './test/test.component';
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
+    MatTabsModule,
+    MatSelectModule,
+    MatDividerModule
    //MatTableDataSource
     
   

@@ -1,0 +1,253 @@
+<div class="background">
+
+
+
+                    <section class="col-4">
+                        <div  class="one" >
+                            <img src="/assets/Combined-Shape.png">
+                        </div>
+                        <div class="two">
+                            <img  src="/assets/dashboard.png">
+                        </div>
+                        <div class="three">
+                            <img id="three-1" src="/assets/verification.png">
+                        </div>
+                        <div class="four">
+                            <img  src="/assets/busnies.png">
+                        </div>
+                        <div class="five">
+                            <img  src="/assets/settings.png">
+                        </div>
+                        <div class="six">
+                            <img  src="/assets/user 2.png">
+                        </div>
+
+                        <label class="leftside1">Sasi Kumar</label>
+
+                        <div class="seven">
+                            <img  src="/assets/logout.png">
+                        </div>
+                        
+                        <label class="leftside2">Logout</label>
+
+                    </section>
+             <section class="col-12">
+
+                    <div class="navbar" >
+                            <div class="icons">
+                               
+                                <i class="material-icons" style="font-size:25px">arrow_back</i> 
+                                <label class="anna">  Anna Kowalska </label>
+                                
+                                    <div class="buttons">
+                                    
+                                    <label id="lb2">Document Id:<span>ASWQ-33432-OORM-1123-MKO23</span></label>   
+                                
+                                    <button mat-stroked-button id="bt2" type="submit">More Info</button>
+                                    <button  mat-stroked-button class="bt2">Scan History</button>
+                                                    
+                                   </div>
+
+                            </div> 
+
+                    </div>
+
+                    <div class=details> 
+
+                     <div class="detail-co1">
+                         
+                        <mat-tab-group>
+                            <mat-tab label=" ID Details" >
+                                <p>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Choose an ID Type</mat-label>
+                                    <mat-select>
+                                      <mat-option>None</mat-option>
+                                      <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+                                    </mat-select>
+                                  </mat-form-field>
+                                  </p>
+                             
+                                 <p>
+                                    <mat-form-field appearance="outline">
+                                      <mat-label>ID Number</mat-label>
+                                      <input matInput placeholder="Placeholder">
+                                      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                                      </mat-form-field>
+                                  </p>
+                                  <p>
+                                    <mat-form-field appearance="outline">
+                                      <mat-label>First Name</mat-label>
+                                      <input matInput placeholder="Placeholder">
+                                      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                                      </mat-form-field>
+                                  </p>
+                                  <p>
+                                    <mat-form-field appearance="outline">
+                                      <mat-label>Last Name</mat-label>
+                                      <input matInput placeholder="Placeholder">
+                                      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                                      </mat-form-field>
+                                  </p>
+
+                                  <p>
+                                  <mat-form-field appearance="outline">
+                                    <mat-label>Date Of Birth</mat-label>
+                                    <mat-date-range-input [rangePicker]="picker">
+                                      <input matStartDate placeholder="Start date">
+                                      <input matEndDate placeholder="End date">
+                                    </mat-date-range-input>
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-date-range-picker #picker></mat-date-range-picker>
+                                  </mat-form-field>
+                                </p>
+
+                                <p>
+                                  <mat-form-field appearance="outline">
+                                    <mat-label>ID Expiry</mat-label>
+                                    <mat-date-range-input [rangePicker]="pickr">
+                                      <input matStartDate placeholder="Start date">
+                                      <input matEndDate placeholder="End date">
+                                    </mat-date-range-input>
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-date-range-picker #pickr></mat-date-range-picker>
+                                  </mat-form-field>
+                                </p>
+
+                                <p>
+                                <button mat-raised-button id="bt4">Cancel</button>
+                                <button mat-button id="bt5" >Save</button>
+                                </p>
+                                  
+
+                                
+                                
+                                
+                            </mat-tab>
+                            <mat-tab label="Address">
+                                                 Address
+                            </mat-tab>
+                            
+                          </mat-tab-group>
+                      </div>
+                      <div class="detail-co2">
+                            <h1>Identity Card</h1>
+                            <p> <mat-divider></mat-divider> </p> 
+                            <img id="img1" src="/assets/idcard.png">
+                            
+                               <p>
+                                    <a href="/details" class="previous round">&#8249;</a>
+                                    <label id="lb3">Front</label>
+                                 
+                              
+                                    <label id="lb4">Back</label>
+                                    <a href="/details" class="next round">&#8250;</a>
+                                </p>
+                             <h2>Live Photo Check</h2>
+                             <p> <mat-divider></mat-divider> </p> 
+                             
+                             <img id="img2" src="/assets/USER1.png">
+                             <img id="img3" src="/assets/USER2.png">
+
+                             <div class="comment">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label style="font-size: 14px;">Type Your Comment Here</mat-label>
+                                    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                                  </mat-form-field>
+                                  <p>
+                                  <label id="comh3">View Comment History</label>
+                                  <button mat-button id="bt9">Comment </button> 
+                                  </p>
+
+
+                             </div>
+                            
+ 
+
+                      </div>
+                      <div class="detail-co3">
+                       
+
+                                <table class="table1">
+                                    <tr>
+                                    <th >Scan ID </th>
+                                    <td >877372019</td>
+                                    </tr>
+                                    <tr>
+                                        <th >Submitted Time</th>
+                                        <td >10:12:34 </td>
+                                    </tr>
+                                    <tr>
+                                        <th >Device Signature</th>
+                                        <td >Chrome v2.6, app v3.2</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th >IP Address</th>
+                                        <td >192.32.09.3</td>
+                                    </tr>
+                                    <tr>
+                                        <th >Mode</th>
+                                        <td >Sandbox</td>
+                                    </tr>
+
+                                </table>   
+                                
+                                <button mat-button id="bt6" >Delete</button>
+                             
+                                 <p> <mat-divider></mat-divider> </p> 
+                             
+                               <h1 >Scan Result</h1>
+                                    <table class="table2">
+                                        <tr>
+                                        <th >Status </th>
+                                        <td >Submitted</td>
+                                        </tr>
+                                        <tr>
+                                            <th >ID Card</th>
+                                            <td >N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <th >Adress</th>
+                                            <td >N/A</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th >Live Check</th>
+                                            <td >N/A</td>
+                                        </tr>
+                                    
+                                    </table>   
+                        <p>
+                        <button mat-button id="bt7">Edit
+                            <i class="material-icons" id="icon1">edit</i>
+                        </button>
+                        <button mat-button id="bt8" >Download
+                            <i class="material-icons" id="icon2">vertical_align_bottom</i>
+                            </button>
+                        </p>
+                                  
+                        
+                                 
+
+                      </div> 
+                     
+
+
+                    </div> 
+
+
+
+                </section>
+          
+
+</div>
+
+
+
+
+
+
+
+
+
