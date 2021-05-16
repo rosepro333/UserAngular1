@@ -1,0 +1,121 @@
+<div class="background">
+
+                <section class="col-4">
+                    <div  class="one" >
+                        <img src="/assets/Combined-Shape.png">
+                    </div>
+                    <div class="two">
+                        <img  src="/assets/dashboard.png">
+                    </div>
+                    <div class="three">
+                        <img id="three-1" src="/assets/verification.png">
+                    </div>
+                    <div class="four">
+                        <img  src="/assets/busnies.png">
+                    </div>
+                    <div class="five">
+                        <img  src="/assets/settings.png">
+                    </div>
+                    <div class="six">
+                        <img  src="/assets/user 2.png">
+                    </div>
+
+                    <label class="leftside1">Sasi Kumar</label>
+
+                    <div class="seven">
+                        <img  src="/assets/logout.png">
+                    </div>
+                    
+                    <label class="leftside2">Logout</label>
+
+                </section>
+            <section class="col-12">
+
+                <div class="navbar" >
+                        <div class="icons">
+                                <div class="selection">
+                                    <select>  
+                                        <option value = "BMW"> Document ID
+                                        </option>  
+                                        <option value = "Mercedes"> Document ID 
+                                        </option>  
+                                    
+                                    </select>  
+                                </div>
+                                <div class="search">
+                                        <input type="text" class="searchTerm" placeholder="Filter">
+                                        <button type="submit" class="searchButton">
+                                        <i class="fa fa-search"></i>
+                                        </button>
+                                </div>
+                                
+            <div class="buttons">
+
+<!-- --------------------------DATE RANGE--------------------------------------------------- -->
+                <mat-form-field appearance="fill" style="flex: 1; " class="bt1">
+                            
+                            
+                    <mat-date-range-input [rangePicker]="picker" [formGroup]="filterForm">
+                    <input matStartDate   formControlName="fromDate" placeholder="Start Date" >
+                    <input matEndDate   formControlName="toDate" placeholder="End Date">
+                    </mat-date-range-input>
+
+                    <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+
+                    <mat-date-range-picker #picker></mat-date-range-picker>
+                    <mat-label>Enter a date range</mat-label>
+
+                
+
+                </mat-form-field> 
+
+
+<!-- ---------------------------------------ANOTHER BUTTONS------------------------------------------------- -->
+                       <button mat-stroked-button id="bt2" (click)="getDateRange()" type="submit">Submit</button> 
+                                        
+                        <!-- <button mat-stroked-button id="bt2" type="submit">Submit</button> -->
+                        <button class="bt2">Clear All</button>
+                                        
+                        </div>
+                </div> 
+                    
+                        
+        </div>
+
+                        <!-- <div class="table-one"> -->
+                            <table class="content-table">
+                                <thead>
+                                   <tr>
+                                      
+                                       <th>Document ID</th>
+                                       <th>Created  On</th>
+                                       <th>Name</th>
+                                       <th>Status</th>
+                           
+                                       
+                                   </tr>
+                                </thead>
+                                    <tbody>
+
+                                        <tr *ngFor="let item of users"> 
+                                        
+                                            <td>{{item.Document_ID._id}}</td>
+                                            <td>{{item.createdAt}}</td>
+                                            <td>{{item.Document_ID.First_Name}}</td>
+                                            <td><button (click)="userdetails(item)">Status</button></td> 
+                                
+                                        </tr>
+
+
+                                    </tbody>
+                               </table>
+
+
+                         <!-- </div>  -->
+
+
+
+         </section> 
+
+
+</div>

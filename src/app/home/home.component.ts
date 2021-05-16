@@ -37,17 +37,18 @@ const ELEMENT_DATA: UserDetails[] = [
 export class HomeComponent implements OnInit {
 
    displayedColumns: string[] = ['documentid', 'createdon', 'name','status'];
+
    dataSource = ELEMENT_DATA;
 
     pipe: DatePipe;
 
  filterForm= new FormGroup({
-       fromDate: new FormControl(),
-       toDate: new FormControl()
- });
+        fromDate: new FormControl(),
+        toDate: new FormControl()
+  });
 
- get fromDate() { return this.filterForm.get('fromDate'); }
- get toDate() { return this.filterForm.get('toDate'); }
+  get fromDate() { return this.filterForm.get('fromDate'); }
+  get toDate() { return this.filterForm.get('toDate'); }
    
 
   constructor(private userService:UserService) {
@@ -59,22 +60,22 @@ export class HomeComponent implements OnInit {
 
   // ----------------------\\\---------DOB: new Date(2040, 5, 30)-----------------
 
-   getDateRange() {
-      // getting date from calendar
-      const fromDate = this.filterForm.value.fromDate
-      const toDate = this.filterForm.value.toDate
-      const tempData = this.dataSource;
-      let selectedItems: UserDetails[] = [];
-     if(fromDate !== '' && toDate !== '') {
-              tempData.forEach((item, index) => {
-             if (item.createdon >= fromDate && item.createdon <= toDate) {
-                 selectedItems.push(item);
-              }
-          });
+                  getDateRange() {
+                      // getting date from calendar
+                      const fromDate = this.filterForm.value.fromDate
+                      const toDate = this.filterForm.value.toDate
+                      const tempData = this.dataSource;
+                       let selectedItems: UserDetails[] = [];
+                    if(fromDate !== '' && toDate !== '') {
+                               tempData.forEach((item, index) => {
+                             if (item.createdon >= fromDate && item.createdon <= toDate) {
+                                 selectedItems.push(item);
+                               }
+                          });
 
-         this.dataSource = selectedItems;
-      }
-    }
+                         this.dataSource = selectedItems;
+                      }
+                     }
 
     // applyFilter(filterValue: string) {
     //   this.dataSource.filter = filterValue.trim().toLowerCase();

@@ -26,6 +26,7 @@ import {MatDividerModule} from '@angular/material/divider';
 
 import { TestComponent } from './test/test.component';
 import { DetailsComponent } from './details/details.component';
+import { Home2Component } from './home2/home2.component';
 
 
 
@@ -37,7 +38,8 @@ import { DetailsComponent } from './details/details.component';
     LoginComponent,
     HomeComponent,
     TestComponent,
-    DetailsComponent
+    DetailsComponent,
+    Home2Component
   ],
   imports: [
     BrowserModule,

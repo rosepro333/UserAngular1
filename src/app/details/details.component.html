@@ -131,23 +131,34 @@
                           </mat-tab-group>
                       </div>
                       <div class="detail-co2">
+
                             <h1>Identity Card</h1>
                             <p> <mat-divider></mat-divider> </p> 
-                            <img id="img1" src="/assets/idcard.png">
+
+                            <div *ngFor="let item of profile">
+                            <img id="img1"  [src]="item.ID_Card_Front">
+                            </div>
                             
-                               <p>
-                                    <a href="/details" class="previous round">&#8249;</a>
-                                    <label id="lb3">Front</label>
-                                 
-                              
-                                    <label id="lb4">Back</label>
-                                    <a href="/details" class="next round">&#8250;</a>
-                                </p>
+                                    <p>
+                                            <a href="/details" class="previous round">&#8249;</a>
+                                            <label id="lb3">Front</label>
+                                        
+                                    
+                                            <label id="lb4">Back</label>
+                                            <a href="/details" class="next round">&#8250;</a>
+                                        </p>
                              <h2>Live Photo Check</h2>
                              <p> <mat-divider></mat-divider> </p> 
+
+                             <div class="IMG" *ngFor="let item of profile">
+
+                                <img class="img2" [src]="item.LiveCheck_Photos[0]">
+                                <img class="img2" [src]="item.LiveCheck_Photos[1]">
+                                <img class="img2" [src]="item.LiveCheck_Photos[2]">
+                                <img class="img2" [src]="item.LiveCheck_Photos[3]">
                              
-                             <img id="img2" src="/assets/USER1.png">
-                             <img id="img3" src="/assets/USER2.png">
+                             
+                            </div>
 
                              <div class="comment">
                                 <mat-form-field class="example-full-width">

@@ -372,8 +372,8 @@ color: #8F8F8F;
 }
 
 #img1{
-    width:50%;
-    margin-left: 145px;
+    width:60%;
+    margin-left: 120px;
 }
 
 
@@ -426,18 +426,17 @@ a {
     font-weight: 500;
     margin-top: 30px;
 }
-
-#img2{
-    width:25%;
-    margin-left: 15px;
-    border-radius: 7px ;
-    margin-left: 120px;
+.IMG{
+  margin-left: 70px;
+  margin-right: 20px;
+  
 }
-#img3{
-    width:25%;
-    margin-left: 15px;
-    border-radius: 7px ;
-    margin-left: 60px;
+
+.img2{
+
+  width:20%;
+  border-radius: 7px ;
+  margin-left: 10px;
 }
 
 
@@ -476,11 +475,10 @@ a {
    color: #0970AA;
   
  
-} 
-
+}  
 
  /* ------------------------------------------------break point 1440*900------------------------- */
-  @media screen and (min-width: 1440px){   
+  @media screen and (min-width: 1440px){  
 
     .background{
    
@@ -856,8 +854,8 @@ a {
     }
     
     #img1{
-        width:50%;
-        margin-left: 145px;
+        width:70%;
+        margin-left: 100px;
     }
     
     
@@ -911,21 +909,20 @@ a {
         margin-top: 30px;
     }
     
-    #img2{
 
-        width:29%;
-        border-radius: 7px ;
-        margin-left: 110px;
-        margin-top: 10px;
-    }
-    #img3{
-
-        width:29%; 
-        border-radius: 7px ;
-        margin-left: 60px;
-        margin-top: 10px;
+    .IMG{
+      margin-left: 70px;
+      margin-right: 20px;
+      
     }
     
+    .img2{
+    
+      width:20%;
+      height: 25%;
+      border-radius: 7px ;
+      margin-left: 10px;
+    }
     
     .example-full-width {
        
@@ -968,10 +965,9 @@ a {
 
 
     
- } 
+  }  
 
   /* ---------------------------------break point 1680*1050-------------------------------------------- */
-
   @media screen and (min-width: 1680px){  
 
     .background{
@@ -1350,10 +1346,9 @@ a {
     }
     
     #img1{
-        width:55%;
-        margin-left: 180px;
-        margin-top: 15px;
-    }
+      width:70%;
+      margin-left: 120px;
+  }
     
     
     a {
@@ -1406,21 +1401,20 @@ a {
         margin-top: 30px;
     }
     
-    #img2{
 
-        width:31%;
-        border-radius: 7px ;
-        margin-left: 110px;
-        margin-top: 15px;
-    }
-    #img3{
-
-        width:31%; 
-        border-radius: 7px ;
-        margin-left: 60px;
-        margin-top: 15px;
+    .IMG{
+      margin-left: 100px;
+      margin-right: 20px;
+      
     }
     
+    .img2{
+    
+      width:20%;
+      height: 25%;
+      border-radius: 7px ;
+      margin-left: 10px;
+    }
     
     .example-full-width {
        
@@ -1461,13 +1455,12 @@ a {
      
     } 
 
-
     
-  } 
+    }    
 
  /* ---------------------------------break point 1920*1080-------------------------------------------- */
 
-  @media screen and (min-width: 1920px){  
+  @media screen and (min-width: 1920px){ 
 
     .background{
    
@@ -1844,11 +1837,11 @@ a {
         margin-top: 30px;
     }
     
+
     #img1{
-        width:54%;
-        margin-left:220px;
-        margin-top: 10px;
-    }
+      width:70%;
+      margin-left: 130px;
+  }
     
     
     a {
@@ -1865,7 +1858,7 @@ a {
       .previous {
         background-color: #d6d0d0;
         color: black;
-        margin-left: 390px;
+        margin-left: 360px;
         font-size: 12px;
       }
       
@@ -1900,21 +1893,22 @@ a {
         font-weight: 500;
         margin-top: 30px;
     }
+
     
-    #img2{
-
-        width:24%;
-        border-radius: 7px ;
-        margin-left: 220px;
-        margin-top: 10px;
+    .IMG{
+      margin-left: 100px;
+      margin-right: 20px;
+      
     }
-    #img3{
-
-        width:24%; 
-        border-radius: 7px ;
-        margin-left: 60px;
-        margin-top: 10px;
+    
+    .img2{
+    
+      width:20%;
+      height: 25%;
+      border-radius: 7px ;
+      margin-left: 10px;
     }
+    
     
     
     .example-full-width {
@@ -1958,4 +1952,4 @@ a {
 
 
     
-  }   
+  }    
